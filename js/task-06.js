@@ -1,7 +1,6 @@
 document.querySelector('#validation-input').addEventListener('blur',
-    e => {
-      
-        if (e.target.value.length !== 6) {
+    e => {        
+        if (e.target.value.length != e.target.dataset.length) {
             e.target.classList.add('invalid')
             e.target.classList.remove('valid')
         }
